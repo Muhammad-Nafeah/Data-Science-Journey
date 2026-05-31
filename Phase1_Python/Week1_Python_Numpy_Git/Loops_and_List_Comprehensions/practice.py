@@ -385,6 +385,8 @@ print(result)
 
 
 sentence = "I am learning Python and Data Science in Karachi"
+# 💡 convert sentence → list
+# 👉 Use split()
 words = sentence.split()
 print(len(words))
 

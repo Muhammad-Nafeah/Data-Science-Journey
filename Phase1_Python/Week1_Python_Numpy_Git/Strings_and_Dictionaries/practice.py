@@ -413,16 +413,14 @@ def ceaser_cipher(text,shift):
                 character_position = ord(char) - ord('a')   #Converts letter → number (0–25)
                 new_position = (character_position + shift) % 26
 
-                #Convert the number back to a letter:
-                new_character = chr(new_position + ord('a'))
+                new_character = chr(new_position + ord('a')) #Convert the number back to a letter:
                 result += new_character
 
             else:
                 character_position = ord(char) - ord('A')   #Converts letter → number (0–25)
                 new_position = (character_position + shift) % 26
-                
-                #Convert the number back to a letter:
-                new_character = chr(new_position + ord('A'))
+        
+                new_character = chr(new_position + ord('A')) #Convert the number back to a letter:
                 result += new_character
         
     return result
