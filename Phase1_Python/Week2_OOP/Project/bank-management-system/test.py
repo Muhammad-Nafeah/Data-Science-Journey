@@ -4,7 +4,7 @@ from models.customer import Customer
 from models.bank import Bank
 
 # create bank
-bank = Bank("HBL Bank")
+bank = Bank("Meridian Bank")
 
 # create customers
 nafeah = Customer("Abdul Nafeah", "42101-1234567-1", "0312-1234567")
@@ -35,3 +35,8 @@ bank.transfer("PKR-001", "PKR-002", 5000)
 # display everything
 bank.display_all_customers()
 bank.total_deposit()
+
+
+
+
+  

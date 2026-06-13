@@ -48,10 +48,3 @@ class Bank:
             for account in customer.get_account():
                 total += account.get_account_balance()
         print(f"Total Deposits: Rs.{total}")
-    
-
-
-
-    
-
-
