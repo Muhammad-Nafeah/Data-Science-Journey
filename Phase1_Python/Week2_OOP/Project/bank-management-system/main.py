@@ -8,11 +8,11 @@ st.set_page_config(
 )
 
 pages = [
-    st.Page("dashboard.py", title="Dashboard", icon="📊"),
-    st.Page("ui/customers.py", title="Customers", icon="👥"),
-    st.Page("ui/accounts.py", title="Accounts", icon="💼"),
-    st.Page("ui/transactions.py", title="Transactions", icon="💳"),
-    st.Page("ui/analytics.py", title="Analytics", icon="📈"),
+    st.Page("dashboard.py", title="Dashboard"),
+    st.Page("ui/customers.py", title="Customers"),
+    st.Page("ui/accounts.py", title="Accounts"),
+    st.Page("ui/transactions.py", title="Transactions"),
+    st.Page("ui/analytics.py", title="Analytics"),
 ]
 
 nav = st.navigation(pages, position="hidden")
