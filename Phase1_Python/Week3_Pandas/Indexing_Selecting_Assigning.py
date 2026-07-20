@@ -214,3 +214,30 @@ women_first_class = df[
     (df["Survived"] == 1)
 ]
 print(women_first_class[["Name", "Age", "Fare"]])
+
+
+# Select all passengers who:
+# are female,
+# survived,
+# and are older than 25.
+# From the result, display only these columns:
+# Name
+# Age
+# Fare
+# Pclass
+# Print the number of passengers in the result.
+# Select all passengers whose Embarked value is either 'S' or 'Q' and whose Fare is greater than 30.
+# From Question 4, print only the first 10 rows using iloc.
+
+import pandas as pd
+
+df = pd.read_csv("Phase1_Python/Week3_Pandas/datasets/Titanic-Dataset.csv")
+
+female_survived = df[(df["Sex"] == "female") & (df["Survived"] == 1) & (df["Age"] > 25)]
+
+print(female_survived[["Name","Age","Fare","Pclass"]])
+print(len(female_survived))
+
+embarked_passenger = df[ (df["Embarked"].isin(['S','Q'])) & (df["Fare"] > 30)]
+print(embarked_passenger.iloc[0:10])
+
